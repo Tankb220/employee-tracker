@@ -24,7 +24,6 @@ function starterPrompt() {
         message: "What would you like to do?",
         choices: [
           "View Employees",
-          "View Employees by Department",
           "Add Employee",
           "Remove Employees",
           "Update Employee Role",
@@ -37,7 +36,7 @@ function starterPrompt() {
           case "View Employees":
             viewEmployee();
             break;
-          
+
           case "Add Employee":
             addEmployee();
             break;
@@ -310,7 +309,6 @@ function addRole() {
 }
 
 
-// will prompt user to add role when called inside the addRole() function
 function promptAddRole(departmentChoices) {
   inquirer.prompt([
       {
